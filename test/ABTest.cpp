@@ -44,6 +44,7 @@ TEST_F(ABTest, controlPairsTest) {
     ASSERT_TRUE(controlPairs("BA", 2, 0));
     ASSERT_TRUE(controlPairs("AB", 2, 1));
     ASSERT_TRUE(controlPairs("", 5, 8));
+    ASSERT_TRUE(controlPairs("BAABBABAAB", 10, 12));
 }
 
 TEST_F(ABTest, N5K4) {
@@ -60,6 +61,10 @@ TEST_F(ABTest, N2K1) {
 
 TEST_F(ABTest, N5K8) {
     ASSERT_TRUE(controlPairs(ab.createString(5, 8), 5, 8));
+}
+
+TEST_F(ABTest, N10K12) {
+    ASSERT_TRUE(controlPairs(ab.createString(10, 12), 10, 12));
 }
 
 TEST_F(ABTest, ABcreateStringN9K0) {
