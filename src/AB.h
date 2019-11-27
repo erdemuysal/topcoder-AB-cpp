@@ -2,8 +2,9 @@
 #define AB_H
 
 #include <string>
-#include <iostream>
+
 using namespace std;
+
 class AB {
 public:
     string createString(int N, int K);

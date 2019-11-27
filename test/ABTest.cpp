@@ -1,8 +1,5 @@
 #include <gtest/gtest.h>
 #include <AB.h>
-#include <string>
-
-using namespace std;
 
 class ABTest : public ::testing::Test {
 protected:
